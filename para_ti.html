@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hecho por alguien que te piensa 💭</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #ffe4ec, #ffffff);
+      color: #ff4081;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    h1 {
+      margin-top: 50px;
+      font-size: 2.5em;
+      animation: fadeInDown 1.5s ease;
+    }
+    h2 {
+      font-weight: normal;
+      color: #ff679b;
+      animation: fadeIn 2s ease;
+    }
+    .frase {
+      margin: 30px auto;
+      max-width: 600px;
+      font-size: 1.2em;
+      line-height: 1.6;
+      animation: fadeInUp 1.8s ease;
+    }
+    .corazon {
+      font-size: 2em;
+      animation: latir 1s infinite;
+    }
+    @keyframes latir {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #888;
+      padding-bottom: 30px;
+    }
+    .boton {
+      background: #ff679b;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 1em;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+    .boton:hover {
+      background: #ff4081;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>Hecho por alguien que te piensa 💭</h1>
+  <h2>Para ti, Carlita 🌸</h2>
+
+  <div class="frase">
+    <p>Hay días en que el mundo parece gris… pero luego sonríes, y el color vuelve solo. 💖</p>
+  </div>
+
+  <div class="frase">
+    <p>No te prometo flores todos los días, pero sí buenos pensamientos cada vez que mi mente se escapa hacia ti. 🌷</p>
+  </div>
+
+  <div class="frase">
+    <p>Si el aburrimiento ataca, recuerda: en algún rincón, alguien está pensando “¿cómo estará mi Carlita hoy?” 😌</p>
+  </div>
+
+  <div class="frase">
+    <p>Dicen que la distancia separa… pero la verdad, solo hace que los pensamientos viajen con más fuerza. 🚀</p>
+  </div>
+
+  <div class="corazon">💗</div>
+
+  <button class="boton" onclick="reproducirMusica()">🎶 Escuchar música</button>
+
+  <audio id="musica" src="https://www.youtube.com/watch?v=vNjahTBqJ-8&list=RDvNjahTBqJ-8&start_radio=1"></audio>
+
+  <footer>© 2025 | Hecho con una sonrisa y un poco de cariño digital 💫</footer>
+
+  <script>
+    function reproducirMusica() {
+      alert("Abre este enlace para escuchar la canción 🎧");
+      window.open("https://www.youtube.com/watch?v=vNjahTBqJ-8&list=RDvNjahTBqJ-8&start_radio=1", "_blank");
+    }
+  </script>
+</body>
+</html>
